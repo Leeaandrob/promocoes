@@ -1,0 +1,1 @@
+web: gunicorn promocoes.wsgi --log-file -
