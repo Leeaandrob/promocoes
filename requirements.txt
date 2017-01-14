@@ -7,3 +7,4 @@ python-decouple==3.0
 unipath==1.1
 django-sslify==0.2.7
 raven==5.20.0
+requests==2.12.4
