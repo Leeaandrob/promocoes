@@ -1,0 +1,175 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <!--[if IE]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <![endif]-->
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- Page title -->
+      <title>Canil Love's Dudley de Lulu e Chihuahua</title>
+      <!--[if lt IE 9]>
+      <script src="js/respond.js"></script>
+      <![endif]-->
+      <!-- Bootstrap Core CSS -->
+      <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css">
+      <!-- Icon fonts -->
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link href="{% static 'fonts/flaticons/flaticon.css' %}" rel="stylesheet" type="text/css">
+      <link href="{% static 'fonts/glyphicons/bootstrap-glyphicons.css' %}" rel="stylesheet" type="text/css">
+      <!-- Google fonts -->
+      <link href="http://fonts.googleapis.com/css?family=Lato:400,800" rel="stylesheet">
+      <link href="http://fonts.googleapis.com/css?family=Baloo+Thambi" rel="stylesheet">
+      <!-- Style CSS -->
+      <link href="{% static 'css/style.css' %}" rel="stylesheet">
+      <!-- Plugins CSS -->
+      <link rel="stylesheet" href="{% static 'css/plugins.css' %}">
+      <!-- Color Style CSS -->
+      <link href="{% static 'styles/maincolors.css' %}" rel="stylesheet">
+      <!-- Favicons-->
+      <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	   <!-- Switcher Only -->
+       <link rel="stylesheet" id="switcher-css" type="text/css" href="{% static 'switcher/css/switcher.css' %}" media="all" />
+	<!-- END Switcher Styles -->
+
+	<!-- Demo Examples (For Module #3) -->
+    <link rel="alternate stylesheet" type="text/css" href="{% static 'styles/bluecollarpet.css' %}" title="bluecollarpet" media="all" />
+    <link rel="alternate stylesheet" type="text/css" href="{% static 'styles/delicatepet.css' %}" title="delicatepet" media="all" />
+    <link rel="alternate stylesheet" type="text/css" href="{% static 'styles/maincolors.css' %}" title="maincolors" media="all" />
+    <link rel="alternate stylesheet" type="text/css" href="{% static 'styles/tropicalpet.css' %}" title="tropicalpet" media="all" />
+    <link rel="alternate stylesheet" type="text/css" href="{% static 'styles/sweetpet.css' %}" title="sweetpet" media="all" />
+	<!-- END Demo Examples -->
+   </head>
+   <body id="page-top">
+
+   <!-- Preloader -->
+      <div id="preloader">
+         <div class="spinner">
+            <div class="bounce1"></div>
+         </div>
+      </div>
+      <!-- Preloader ends -->
+      <nav class="navbar navbar-custom navbar-fixed-top">
+         <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+               <i class="fa fa-bars"></i>
+               </button>
+               <div class="navbar-brand navbar-brand-centered page-scroll">
+                  <a href="#page-top">
+                      <!-- <span class="img-responsive">Canil Love's Dudley de Lulu e Chihuahua</span> -->
+                     <!-- <img src="{% static 'img/logo.png' %}" class="img-responsive" alt=""> -->
+                  </a>
+               </div>
+            </div>
+            <!--/navbar-header -->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-brand-centered">
+               <ul class="nav navbar-nav">
+                   <li class="active"><a href="{% url 'home' %}">Home</a></li>
+                  <li><a href="#about-index">Quem somos</a></li>
+                  <!-- <li class="dropdown"> -->
+                  <!--    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Pages<b class="caret"></b></a> -->
+                  <!--    <ul class="dropdown-menu"> -->
+                  <!--       <li><a href="adoption.html">Adoption</a></li> -->
+                  <!--       <li><a href="services.html">Our Services</a></li> -->
+                  <!--       <li><a href="services-single.html">Services Single</a></li> -->
+                  <!--       <li><a href="team.html">Our Team</a></li> -->
+                  <!--       <li><a href="pricing.html">Pricing</a></li> -->
+                  <!--       <li><a href="testimonials.html">Testimonials</a></li> -->
+                  <!--       <li><a href="elements.html">Elements</a></li> -->
+                  <!--    </ul> -->
+                  <!-- </li> -->
+               </ul>
+               <ul class="nav navbar-nav navbar-right">
+                  <!-- <li><a href="gallery.html">Nossos cães</a></li> -->
+                  <li><a href="#services-index">Nossos filhotes</a></li>
+                  <!-- <li class="dropdown"> -->
+                  <!--    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog<b class="caret"></b></a> -->
+                  <!--    <ul class="dropdown-menu"> -->
+                  <!--       <li><a href="blog.html">Blog Home</a></li> -->
+                  <!--       <li><a href="blog-single.html">Blog Post</a></li> -->
+                  <!--    </ul> -->
+                  <!-- </li> -->
+                  <li><a href="#services-contact">Contato</a></li>
+               </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+         </div>
+         <!-- /.container -->
+      </nav>
+      <!-- /navbar ends -->
+
+      {% block content %}
+      {% endblock %}
+
+      <!-- Footer -->
+      <footer id="services-contact">
+         <!-- Contact info -->
+         <div class="container">
+            <div class="col-md-4 text-center">
+                <!-- <span class="center-block img-responsive">Canil Love's Dudley de Lulu e Chihuahua</span> -->
+               <!-- <img src="{% static 'img/logo.png' %}" alt="" class="center-block img-responsive"> -->
+            </div>
+            <!-- /.col-md-4 -->
+            <div class="col-md-4 text-center res-margin">
+               <ul class="list-unstyled">
+                  <li><i class="fa fa-phone"></i>(21) 96444-7275</li>
+                  <li><i class="fa fa-envelope"></i>Email: <a href="mailto:helendudleydog@gmail">helendudleydog@gmail</a></li>
+                  <li><i class="fa fa-map-marker"></i>VARGEM PEQUENA - Rio de Janeiro</li>
+               </ul>
+            </div>
+            <!-- /.col-md-4 -->
+            <div class="col-md-4 text-center res-margin">
+               <h5>Follow us</h5>
+               <!--Social icons -->
+               <div class="social-media">
+                  <!-- <a href="#" title=""><i class="fa fa-twitter"></i></a> -->
+                  <a href="https://www.facebook.com/Canil-Loves-Dudley-de-Lulu-e-Chihuahua-1600002963545861/" title="" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <!-- <a href="#" title=""><i class="fa fa-google-plus"></i></a> -->
+                  <a href="#" title="" target="_blank"><i class="fa fa-instagram"></i></a>
+               </div>
+            </div>
+            <!-- /.col-md-4 -->
+         </div>
+         <!-- /.container -->
+         <!-- Credits-->
+         <div class="credits col-md-12 text-center">
+            Copyright © 2017 - Designed by <a href="#">Leandro Barbosa</a>
+            <!-- Go To Top Link -->
+            <div class="page-scroll hidden-sm hidden-xs">
+               <a href="#page-top" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+            </div>
+         </div>
+         <!-- /credits -->
+      </footer>
+      <!-- /footer ends -->
+      <!-- Core JavaScript Files -->
+      <script src="{% static 'js/jquery.min.js' %}"></script>
+      <script src="{% static 'js/bootstrap.min.js' %}"></script>
+      <!-- Main Js -->
+      <script src="{% static 'js/main.js' %}"></script>
+      <!-- Bootstrap Select Tool (For Module #4) -->
+      <script src="{% static 'switcher/js/bootstrap-select.js' %}"></script>
+      <!-- All Scripts & Plugins -->
+      <script src="{% static 'switcher/js/dmss.js' %}"></script>
+      <!-- Contact form -->
+      <script src="{% static 'js/contact.js' %}"></script>
+      <!--Other Plugins -->
+      <script src="{% static 'js/plugins.js' %}"></script>
+      <!-- Prefix free CSS -->
+      <script src="{% static 'js/prefixfree.js' %}"></script>
+      <!--Mail Chimp validator -->
+      <script src="{% static 'js/mc-validate.js' %}"></script>
+      <!-- Google maps-->
+      <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+      <script src="{% static 'js/map.js' %}"></script>
+
+   </body>
+</html>

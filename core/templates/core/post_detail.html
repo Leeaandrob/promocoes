@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- Section Services -->
+<section id="services" class="pages">
+    <div class="jumbotron" data-stellar-background-ratio="0.5" style="background: url('{{ post.image_cover.url }}')">
+    <!-- Heading -->
+    <div class="jumbo-heading" data-stellar-background-ratio="1.2">
+        <h1>{{ post.title }}</h1>
+    </div>
+ </div>
+ <!-- container-->
+ <div class="container">
+    <div class="row">
+       <div class="col-md-12">
+          <h3>Sobre o bebê:</h3>
+          {{ post.content }}
+          <!-- button -->
+          <!-- <a class="btn" href="services.html"> -->
+          <!-- <i class="fa fa-angle-double-left"></i> All Services -->
+          </a>
+       </div>
+       <!-- /col-md-6 -->
+       <!-- <div class="col-md-6 res-margin"> -->
+       <!--    <h4>Service Highlights</h4> -->
+       <!--    <ul class="custom no-margin"> -->
+       <!--       <li>Aliquam erat volut pat. </li> -->
+       <!--       <li>Ibu lum orci eget, viverra elit liquam erat volut pat phas ellus ac</li> -->
+       <!--       <li>Aliquam erat volut pat phas ellu</li> -->
+       <!--       <li>Eam et volumus atomorum scribentur te apeirian omittantu</li> -->
+       <!--       <li>Duo in appetere interesset concludaturque</li> -->
+       <!--       <li>Itlorem ipuset phas ellus ac sodales Lorem ipsum dolor Phas ell</li> -->
+       <!--       <li>Aliquam erat volut pat phas ellu</li> -->
+       <!--    </ul> -->
+          <!-- /ul -->
+       <!-- </div> -->
+       <!-- /col-md-6 -->
+    </div>
+    <!-- /row -->
+ </div>
+ <!-- /container -->
+ <!-- owl slider -->
+ <div class="container-fluid margin1">
+    <div id="owl-featured" class="owl-carousel no-padding margin1">
+       {% for post_image in post.galery.all %}
+       <div class="col-md-12">
+           <!-- image -->
+           <a href="{{ post_image.image.url }}" data-gal="prettyPhoto[gallery]" title="">
+               <img src="{{ post_image.image.url }}" class="img-rounded img-responsive" alt="">
+           </a>
+       </div>
+       {% endfor %}
+       <!-- /col-md-12 -->
+       <!-- <div class="col-md-12"> -->
+          <!-- image -->
+          <!-- <a href="img/feature5.jpg" data-gal="prettyPhoto[gallery]" title=""> -->
+          <!-- <img src="img/feature5.jpg" class="img-rounded img-responsive" alt=""> -->
+          <!-- </a> -->
+       <!-- </div> -->
+       <!-- /col-md-12 -->
+    </div>
+    <!-- /owl-carousel -->
+ </div>
+ <!-- /container-->
+</section>
+<!-- /Section ends -->
+{% endblock %}

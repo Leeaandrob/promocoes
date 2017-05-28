@@ -1,5 +1,8 @@
 env
 *.pyc
+.DS_Store
+promocoes/media/
+tmp/
 staticfiles
 settings.ini
 **/*db.sqlite3
